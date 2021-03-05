@@ -4,7 +4,6 @@ a {
 }
 
 .sign-in {
-  height: 20rem; 
   background-color: rgb(255, 255, 255);
   margin: 2rem 1rem 2rem 1rem;
   padding: 1rem;
@@ -36,27 +35,26 @@ button.google-btn {
   border-radius: 33px;
   border: 1px solid grey;
   text-align: center;
-  color: white;
-  background-color: rgb(137, 87, 238);
+  color: black;
+  background-color: rgb(255, 255, 255);
   cursor: pointer;
+  box-shadow: 1px 1px 1px black;
 }
+
+
 
 button.sign-in-btn {
-  margin-top: 2.5rem;
+  margin-top: 3.5rem;
 }
 
-.google-sign-in {
+.sign-in p {
   text-align: center;
-  border: 1px solid black; 
-  margin: 2rem 1rem 2rem 1rem;
-  border-radius: 6px;
-  padding: 1rem
+  margin-top: 1rem;
+  margin-left: -1rem;
 }
 
-.google-sign-in p {
-  text-align: center;
-}
-
-button.google-btn {
-  margin-left: 0rem;
+button:hover {
+  transition: 0.3s ease-out;
+  background-color: black;
+  color: white;
 }

@@ -1,6 +1,7 @@
 // add useContext
 import React, { useContext } from 'react';
 import { firebaseAuth } from '../provider/AuthProvider'
+import GoogleSignIn from './GoogleSignIn'
 
 
 const Signin = () => {
@@ -34,12 +35,8 @@ const Signin = () => {
           {errors.length > 0 ? errors.map(error => <p style={{ color: 'red' }}>{error}</p>) : null}
         </form>
         <a href={'/signup'}><button>Create Account</button></a>
-      </div>
-      <div className="google-sign-in">
         <p>Or</p>
-        <div>
-          <button className="google-btn">Sign In With Google</button>
-        </div>
+        <GoogleSignIn />
       </div>
     </div>
   );

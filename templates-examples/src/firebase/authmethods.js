@@ -1,4 +1,3 @@
-import firebaseconfig from './firebaseindex'
 import firebase from 'firebase'
 
 export const authMethods = {
