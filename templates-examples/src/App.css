@@ -1,38 +1,62 @@
-.App {
+
+a {
+  text-decoration: none;
+}
+
+.sign-in {
+  height: 20rem; 
+  background-color: rgb(255, 255, 255);
+  margin: 2rem 1rem 2rem 1rem;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid black;
+  
+}
+
+.sign-in h3 {
+  margin: 0.5rem 0rem 1rem 0rem;
+}
+
+.sign-in input {
+  all: unset;
+  margin: 1rem 0rem 0rem 2rem;
+  border-bottom: 1px solid black;
+}
+
+.sign-in input::placeholder {
+  opacity: 0.5;
+}
+
+.sign-in button,
+button.google-btn {
+  all: unset;
+  padding: 4px;
+  width: 9rem;
+  margin: 1rem 0rem 0rem 2.5rem;
+  border-radius: 33px;
+  border: 1px solid grey;
+  text-align: center;
+  color: white;
+  background-color: rgb(137, 87, 238);
+  cursor: pointer;
+}
+
+button.sign-in-btn {
+  margin-top: 2.5rem;
+}
+
+.google-sign-in {
+  text-align: center;
+  border: 1px solid black; 
+  margin: 2rem 1rem 2rem 1rem;
+  border-radius: 6px;
+  padding: 1rem
+}
+
+.google-sign-in p {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button.google-btn {
+  margin-left: 0rem;
 }

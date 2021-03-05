@@ -3,7 +3,7 @@ import 'firebase/auth'
 import 'firebase/app'
 
 let firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
+  apiKey: "AIzaSyDx9gjvRKnUK7pMQs9RMWDArZkf3XLvNO4",
   authDomain: process.env.REACT_APP_AUTHDOMAIN,
   databaseURL: process.env.REACT_APP_BASEURL,
   projectId: process.env.REACT_APP_PROJECT_ID,

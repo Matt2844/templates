@@ -2,6 +2,7 @@
 import React, { useContext } from 'react';
 import { firebaseAuth } from '../provider/AuthProvider'
 
+
 const Signin = () => {
 
 
@@ -21,16 +22,25 @@ const Signin = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        {/* replace the div tags with a form tag */}
-      Signin
-      {/* make inputs  */}
-        <input onChange={handleChange} name="email" placeholder='email' value={inputs.email} />
-        <input onChange={handleChange} name="password" placeholder='password' value={inputs.password} />
-        <button>signin</button>
-        {errors.length > 0 ? errors.map(error => <p style={{ color: 'red' }}>{error}</p>) : null}
-      </form>
-      <a href={'/signup'}><button>Create an account</button></a>
+      <div className="sign-in">
+        <form onSubmit={handleSubmit}>
+          {/* replace the div tags with a form tag */}
+          <h3>Sign In</h3>
+          {/* make inputs  */}
+          <input onChange={handleChange} name="email" placeholder='email' value={inputs.email} />
+          <input onChange={handleChange} name="password" placeholder='password' value={inputs.password} />
+          <br />
+          <button className="sign-in-btn">Sign In</button>
+          {errors.length > 0 ? errors.map(error => <p style={{ color: 'red' }}>{error}</p>) : null}
+        </form>
+        <a href={'/signup'}><button>Create Account</button></a>
+      </div>
+      <div className="google-sign-in">
+        <p>Or</p>
+        <div>
+          <button className="google-btn">Sign In With Google</button>
+        </div>
+      </div>
     </div>
   );
 };

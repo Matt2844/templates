@@ -22,15 +22,17 @@ const Signup = (props) => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      {/* replace the div tags with a form tag */}
+    <div className="sign-up-container">
+      <form onSubmit={handleSubmit}>
+        {/* replace the div tags with a form tag */}
       Signup
       {/* make inputs  */}
-      <input onChange={handleChange} name="email" placeholder='email' value={inputs.email} />
-      <input onChange={handleChange} name="password" placeholder='password' value={inputs.password} />
-      <button>signup</button>
-      {errors.length > 0 ? errors.map(error => <p style={{ color: 'red' }}>{error}</p>) : null}
-    </form>
+        <input onChange={handleChange} name="email" placeholder='email' value={inputs.email} />
+        <input onChange={handleChange} name="password" placeholder='password' value={inputs.password} />
+        <button>signup</button>
+        {errors.length > 0 ? errors.map(error => <p style={{ color: 'red' }}>{error}</p>) : null}
+      </form>
+    </div>
   );
 };
 
